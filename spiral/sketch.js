@@ -1,5 +1,5 @@
-const width=window.innerWidth;
-const height=window.innerHeight;
+var width=window.innerWidth;
+var height=window.innerHeight;
 
 setup = function(){
     createCanvas(width,height);
@@ -9,6 +9,10 @@ setup = function(){
 
 
 function draw() {
+    width=window.innerWidth;
+    height=window.innerHeight;
+    resizeCanvas(width,height);
+    
     var time = millis();
     background(0);
     for(i=0;i<2000;i++){
